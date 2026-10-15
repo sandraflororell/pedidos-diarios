@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 420px;
+    margin: 20px 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: #28a745;
+    margin-bottom: 15px;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+}
+
+/* Clase para alerta de cantidad baja (< 5) */
+.bajo-stock {
+    color: red;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Modo oscuro */
+body.oscuro {
+    background-color: #121212;
+    color: #f4f4f9;
+}
+
+body.oscuro .card {
+    background: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.oscuro input, body.oscuro fieldset {
+    background: #2a2a2a;
+    color: #fff;
+    border-color: #444;
+}

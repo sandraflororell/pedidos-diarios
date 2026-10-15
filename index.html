@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Pedidos con Detalle</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1>Registro de Pedidos</h1>
+        
+        <!-- Botón Modo Oscuro -->
+        <button id="btn-modo">Modo Oscuro</button>
+
+        <!-- Formulario General del Cliente -->
+        <div class="form-group">
+            <input type="text" id="nombre-cliente" placeholder="Nombre del cliente">
+            <input type="text" id="dirección-cliente" placeholder="Dirección del cliente">
+        </div>
+
+        <!-- Detalle de Producto -->
+        <fieldset class="form-group">
+            <legend>Detalle del Producto</legend>
+            <input type="text" id="nombre-producto" placeholder="Nombre del producto">
+            <input type="number" id="cantidad" placeholder="Cantidad">
+            <input type="number" id="precio" placeholder="Precio (Bs)">
+            <button type="button" id="btn-agregar-producto">Agregar Producto al Pedido</button>
+        </fieldset>
+
+        <!-- Lista temporal de productos para este cliente -->
+        <h3>Productos en este pedido:</h3>
+        <ul id="lista-detalle"></ul>
+
+        <!-- Botón Finalizar / Registrar Pedido -->
+        <button id="btn-registrar-pedido" class="btn-primary">Registrar Pedido Completo</button>
+
+        <!-- Lista general de pedidos registrados -->
+        <h2>Pedidos Registrados</h2>
+        <ul id="lista-pedidos"></ul>
+
+        <!-- Párrafo para el valor total global -->
+        <p>Valor total de los pedidos: Bs<span id="valor-total">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
